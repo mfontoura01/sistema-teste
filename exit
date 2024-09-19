@@ -1,0 +1,161 @@
+[33mcommit c1598b122983f1c06b1fc3633def79ee75dc9a32[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 29185b4 b0513d8
+Author: mfontoura01 <marcelo.fontoura@gmail.com>
+Date:   Thu Sep 19 14:50:13 2024 -0300
+
+    Merge branch 'main' of https://github.com/mfontoura01/sistema-teste
+
+[33mcommit 29185b486880d7db1b4b0fa91edebe21a810ce33[m
+Author: mfontoura01 <marcelo.fontoura@gmail.com>
+Date:   Thu Sep 19 14:48:21 2024 -0300
+
+    Ajuste da linha 14
+
+[1mdiff --git a/app.js b/app.js[m
+[1mindex 4f0a5af..618486e 100644[m
+[1m--- a/app.js[m
+[1m+++ b/app.js[m
+[36m@@ -1 +1,2 @@[m
+ console.log("Rodando o sistema de gerenciamento de jogos")[m
+[32m+[m[32mconsole.log("Rodando a gestão de jogos")[m
+\ No newline at end of file[m
+
+[33mcommit b0513d859f17cb1065ded8729512294f47c1e517[m
+Author: Marcelo Carneiro da Fontoura <72932432+mfontoura01@users.noreply.github.com>
+Date:   Thu Sep 19 14:46:31 2024 -0300
+
+    Update app.js inclui 3 linhas
+
+[1mdiff --git a/app.js b/app.js[m
+[1mindex 4f0a5af..728bd4b 100644[m
+[1m--- a/app.js[m
+[1m+++ b/app.js[m
+[36m@@ -1 +1,4 @@[m
+ console.log("Rodando o sistema de gerenciamento de jogos")[m
+[32m+[m[32mconsole.log("Aplicação está se conectando ao Banco de Dados")[m
+[32m+[m[32m// mais um console log de teste: feito por Mfontoura01[m
+[32m+[m[32mconsole.log("Nova alteração para ver o reflexo no VSCode do notebook")[m
+
+[33mcommit 10c687ff1b65231545bf73fba378ebfc89e06ca7[m
+Author: mfontoura01 <marcelo.fontoura@gmail.com>
+Date:   Thu Sep 19 14:36:25 2024 -0300
+
+    linkando o app js com o html
+
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 5733d9a..396d1e3 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -7,6 +7,7 @@[m
+ </head>[m
+ <body>[m
+     <h1>Sistema de cadastro de jogos</h1>[m
+[32m+[m[32m    <script src=""app.js"></script>[m
+     </h1>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+
+[33mcommit cd2250192cd2902baa34af02bde35a6b8d0b3cc4[m
+Author: Marcelo Carneiro da Fontoura <72932432+mfontoura01@users.noreply.github.com>
+Date:   Thu Sep 19 17:05:53 2024 +0000
+
+    Criando o arquivo index.html
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 9746867..c70fd40 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -8,3 +8,4 @@[m
+ > ```[m
+ > node app.js[m
+ > ```[m
+[32m+[m[32m:)[m
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5733d9a[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="pt-br">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Meus jogos</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <h1>Sistema de cadastro de jogos</h1>[m
+[32m+[m[32m    </h1>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f36b1c4[m
+[1m--- /dev/null[m
+[1m+++ b/package-lock.json[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "name": "sistema-teste",[m
+[32m+[m[32m  "lockfileVersion": 2,[m
+[32m+[m[32m  "requires": true,[m
+[32m+[m[32m  "packages": {}[m
+[32m+[m[32m}[m
+
+[33mcommit f7121d19e484e54173fc04fdc3b13275d24dbb99[m
+Author: Marcelo Carneiro da Fontoura <72932432+mfontoura01@users.noreply.github.com>
+Date:   Thu Sep 19 13:55:31 2024 -0300
+
+    Update README.md - node inclui app.js
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex f18adf2..9746867 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -6,5 +6,5 @@[m
+ >[m
+ > Para rodar esse projeto na sua máquina, por favor digite:[m
+ > ```[m
+[31m-> npm install react[m
+[32m+[m[32m> node app.js[m
+ > ```[m
+
+[33mcommit 950cfce7e39ae3897c189ba6416c1bd306c206d7[m
+Author: Marcelo Carneiro da Fontoura <72932432+mfontoura01@users.noreply.github.com>
+Date:   Thu Sep 19 13:53:44 2024 -0300
+
+    Criando o arquivo js com o console
+
+[1mdiff --git a/app.js b/app.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4f0a5af[m
+[1m--- /dev/null[m
+[1m+++ b/app.js[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mconsole.log("Rodando o sistema de gerenciamento de jogos")[m
+
+[33mcommit bd9d1cb12bf8748c65670c13a7253a9c83f9686c[m
+Author: Marcelo Carneiro da Fontoura <72932432+mfontoura01@users.noreply.github.com>
+Date:   Thu Sep 19 12:32:07 2024 -0300
+
+    Create README.md
+    
+    Foi criado e incluídas as informações iniciais.
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f18adf2[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m<h1> Sistema de cadastro de jogos</h1>[m
+[32m+[m
+[32m+[m[32m> Status do projeto: Em desenvolvimento inicial. Aula 04[m
+[32m+[m[32m>[m
+[32m+[m[32m> Detalhes sobre a linguagem, as dependências, etc.[m
+[32m+[m[32m>[m
+[32m+[m[32m> Para rodar esse projeto na sua máquina, por favor digite:[m
+[32m+[m[32m> ```[m
+[32m+[m[32m> npm install react[m
+[32m+[m[32m> ```[m
